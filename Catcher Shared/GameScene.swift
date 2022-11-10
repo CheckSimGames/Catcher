@@ -9,8 +9,11 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    var player = Player()
+    
     func setUpScene() {
-
+        player.sprite.node.entity = player
+        addChild(player.sprite.node)
     }
     
     override func didMove(to view: SKView) {
