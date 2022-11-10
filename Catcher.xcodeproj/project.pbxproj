@@ -26,6 +26,8 @@
 		4D96FF36291D947000E20D43 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF34291D947000E20D43 /* SpriteComponent.swift */; };
 		4D96FF39291D97F500E20D43 /* EventHandlingMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF37291D97F500E20D43 /* EventHandlingMac.swift */; };
 		4D96FF3B291D98C900E20D43 /* EventHandlingiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF3A291D98C900E20D43 /* EventHandlingiOS.swift */; };
+		4D96FF3E291D9A7B00E20D43 /* TransformCompnent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF3D291D9A7B00E20D43 /* TransformCompnent.swift */; };
+		4D96FF3F291D9A7B00E20D43 /* TransformCompnent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF3D291D9A7B00E20D43 /* TransformCompnent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,7 @@
 		4D96FF34291D947000E20D43 /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		4D96FF37291D97F500E20D43 /* EventHandlingMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandlingMac.swift; sourceTree = "<group>"; };
 		4D96FF3A291D98C900E20D43 /* EventHandlingiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandlingiOS.swift; sourceTree = "<group>"; };
+		4D96FF3D291D9A7B00E20D43 /* TransformCompnent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformCompnent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 				4D96FF00291D8B5200E20D43 /* GameScene.swift */,
 				4D96FF31291D941F00E20D43 /* Player.swift */,
 				4D96FF34291D947000E20D43 /* SpriteComponent.swift */,
+				4D96FF3D291D9A7B00E20D43 /* TransformCompnent.swift */,
 			);
 			path = "Catcher Shared";
 			sourceTree = "<group>";
@@ -225,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D96FF32291D941F00E20D43 /* Player.swift in Sources */,
+				4D96FF3E291D9A7B00E20D43 /* TransformCompnent.swift in Sources */,
 				4D96FF35291D947000E20D43 /* SpriteComponent.swift in Sources */,
 				4D96FF25291D8B5400E20D43 /* GameScene.swift in Sources */,
 				4D96FF0C291D8B5400E20D43 /* GameViewController.swift in Sources */,
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D96FF33291D941F00E20D43 /* Player.swift in Sources */,
+				4D96FF3F291D9A7B00E20D43 /* TransformCompnent.swift in Sources */,
 				4D96FF36291D947000E20D43 /* SpriteComponent.swift in Sources */,
 				4D96FF26291D8B5400E20D43 /* GameScene.swift in Sources */,
 				4D96FF1C291D8B5400E20D43 /* GameViewController.swift in Sources */,
