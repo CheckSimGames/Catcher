@@ -70,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				4D96FEFE291D8B5200E20D43 /* Actions.sks */,
-				4D96FF00291D8B5200E20D43 /* GameScene.swift */,
 				4D96FF01291D8B5400E20D43 /* Assets.xcassets */,
+				4D96FF00291D8B5200E20D43 /* GameScene.swift */,
 			);
 			path = "Catcher Shared";
 			sourceTree = "<group>";
