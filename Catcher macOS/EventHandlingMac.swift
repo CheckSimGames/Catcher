@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import SpriteKit
+
+extension GameScene {
+
+    override func mouseDown(with event: NSEvent) {
+
+    }
+    
+    override func mouseDragged(with event: NSEvent) {
+
+    }
+    
+    override func mouseUp(with event: NSEvent) {
+
+    }
+
+}
