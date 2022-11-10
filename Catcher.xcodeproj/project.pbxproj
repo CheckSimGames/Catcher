@@ -25,6 +25,7 @@
 		4D96FF35291D947000E20D43 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF34291D947000E20D43 /* SpriteComponent.swift */; };
 		4D96FF36291D947000E20D43 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF34291D947000E20D43 /* SpriteComponent.swift */; };
 		4D96FF39291D97F500E20D43 /* EventHandlingMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF37291D97F500E20D43 /* EventHandlingMac.swift */; };
+		4D96FF3B291D98C900E20D43 /* EventHandlingiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF3A291D98C900E20D43 /* EventHandlingiOS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		4D96FF31291D941F00E20D43 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		4D96FF34291D947000E20D43 /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		4D96FF37291D97F500E20D43 /* EventHandlingMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandlingMac.swift; sourceTree = "<group>"; };
+		4D96FF3A291D98C900E20D43 /* EventHandlingiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandlingiOS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				4D96FF09291D8B5400E20D43 /* AppDelegate.swift */,
+				4D96FF3A291D98C900E20D43 /* EventHandlingiOS.swift */,
 				4D96FF0B291D8B5400E20D43 /* GameViewController.swift */,
 				4D96FF0D291D8B5400E20D43 /* Main.storyboard */,
 				4D96FF10291D8B5400E20D43 /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 				4D96FF25291D8B5400E20D43 /* GameScene.swift in Sources */,
 				4D96FF0C291D8B5400E20D43 /* GameViewController.swift in Sources */,
 				4D96FF0A291D8B5400E20D43 /* AppDelegate.swift in Sources */,
+				4D96FF3B291D98C900E20D43 /* EventHandlingiOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
