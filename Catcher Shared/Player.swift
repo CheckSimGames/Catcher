@@ -10,12 +10,16 @@ import GameplayKit
 
 class Player: GKEntity {
     let sprite = SpriteComponent()
+    let transform = TransformComponent()
     
     override init() {
         super.init()
         
         sprite.node = SKSpriteNode(color: .red, size: CGSize(width: 128, height: 128))
         addComponent(sprite)
+        
+        addComponent(transform)
+        transform.set(node: sprite.node)
     }
     
     required init?(coder: NSCoder) {
