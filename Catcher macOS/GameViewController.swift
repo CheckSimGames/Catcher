@@ -14,9 +14,8 @@ class GameViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scene = GameScene(size: view.bounds.size)
-        
-        // I may need to set the scale mode if things don't look right. The .aspectFill scale mode is in the Apple code for a new project.
+        let scene = GameScene(size: view.bounds.size)        
+        scene.scaleMode = .resizeFill
         
         // Present the scene
         let skView = self.view as! SKView
