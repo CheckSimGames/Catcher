@@ -34,13 +34,13 @@ extension GameScene {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches {
-            self.makeSpinny(at: t.location(in: self), color: SKColor.blue)
+            
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches {
-            self.makeSpinny(at: t.location(in: self), color: SKColor.red)
+
         }
     }
     
