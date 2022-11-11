@@ -39,7 +39,9 @@ class GameScene: SKScene {
     
     func spawnFood() {
         // Spawn the food at the top of the scene at a random horizontal spot.
-        let randomGenerator = GKRandomDistribution(lowestValue: 0, highestValue: Int(size.width))
+        let spriteSize = 32
+        // Keep the food from getting cut off the edges of the screen.
+        let randomGenerator = GKRandomDistribution(lowestValue: spriteSize, highestValue: Int(size.width) - spriteSize)
         let x = randomGenerator.nextInt()
         let y = Int(size.height)
         
