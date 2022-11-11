@@ -6,13 +6,16 @@
 //
 
 import SpriteKit
+import GameplayKit
 
 class GameScene: SKScene {
     
     var player = Player()
+    var foodList: Set<Food> = []
     
     func setUpScene() {
         placePlayer()
+        spawnFood()
     }
     
     func placePlayer() {
@@ -23,6 +26,18 @@ class GameScene: SKScene {
         player.sprite.node.position = CGPoint(x: startX, y: startY)
         player.sprite.node.entity = player
         addChild(player.sprite.node)
+    }
+    
+    func spawnFood() {
+        // Spawn the food at the top of the scene at a random horizontal spot.
+        let randomGenerator = GKRandomDistribution(lowestValue: 0, highestValue: Int(size.width))
+        let x = randomGenerator.nextInt()
+        
+        let newFood = Food(location: CGPoint(x: x, y: Int(size.height)))
+        // Set the food's entity so we don't have a nil entity when doing collision detection.
+        newFood.sprite.node.entity = newFood
+        foodList.insert(newFood)
+        addChild(newFood.sprite.node)
     }
     
     override func didMove(to view: SKView) {
