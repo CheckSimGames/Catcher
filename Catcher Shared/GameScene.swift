@@ -32,7 +32,7 @@ class GameScene: SKScene {
     }
     
     func startTimer() {
-        spawnTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: {_ in
+        spawnTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {_ in
             self.spawnFood()
         })
     }
