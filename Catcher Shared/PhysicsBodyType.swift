@@ -36,6 +36,8 @@ struct PhysicsBodyType: OptionSet, Hashable {
             return self.player
         case is Food:
             return self.food
+        case is Ground:
+            return self.ground
         default:
             return nil
         }
