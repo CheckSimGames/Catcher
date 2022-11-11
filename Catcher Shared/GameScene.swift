@@ -12,7 +12,7 @@ class GameScene: SKScene {
     
     var player = Player()
     var foodList: Set<Food> = []
-    var dropSpeed = -5.0
+    var dropSpeed = -4.0
     var spawnTimer = Timer()
     var dropSpeedTimer = Timer()
     var scoreLabel = SKLabelNode()
@@ -40,7 +40,7 @@ class GameScene: SKScene {
             self.spawnFood()
         })
         
-        spawnTimer = Timer.scheduledTimer(withTimeInterval: 15.0, repeats: true, block: {_ in
+        spawnTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: {_ in
             self.increaseDropSpeed()
         })
     }
@@ -92,7 +92,7 @@ class GameScene: SKScene {
     
     func increaseDropSpeed() {
         // Dropping is a negative number so to increase the speed, subtract.
-        dropSpeed -= 1.0
+        dropSpeed -= 0.5
     }
 }
 
