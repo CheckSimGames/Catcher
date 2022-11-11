@@ -36,6 +36,8 @@
 		4D96FF48291EDF9600E20D43 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF46291EDF9600E20D43 /* Food.swift */; };
 		4D96FF4A291EE83D00E20D43 /* ContactNotifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */; };
 		4D96FF4B291EE83D00E20D43 /* ContactNotifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */; };
+		4D96FF4D291F162600E20D43 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF4C291F162600E20D43 /* Ground.swift */; };
+		4D96FF4E291F162600E20D43 /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF4C291F162600E20D43 /* Ground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,7 @@
 		4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBodyType.swift; sourceTree = "<group>"; };
 		4D96FF46291EDF9600E20D43 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNotifiable.swift; sourceTree = "<group>"; };
+		4D96FF4C291F162600E20D43 /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 				4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */,
 				4D96FF46291EDF9600E20D43 /* Food.swift */,
 				4D96FF00291D8B5200E20D43 /* GameScene.swift */,
+				4D96FF4C291F162600E20D43 /* Ground.swift */,
 				4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */,
 				4D96FF40291EDE3E00E20D43 /* PhysicsComponent.swift */,
 				4D96FF31291D941F00E20D43 /* Player.swift */,
@@ -250,6 +254,7 @@
 				4D96FF35291D947000E20D43 /* SpriteComponent.swift in Sources */,
 				4D96FF25291D8B5400E20D43 /* GameScene.swift in Sources */,
 				4D96FF0C291D8B5400E20D43 /* GameViewController.swift in Sources */,
+				4D96FF4D291F162600E20D43 /* Ground.swift in Sources */,
 				4D96FF0A291D8B5400E20D43 /* AppDelegate.swift in Sources */,
 				4D96FF47291EDF9600E20D43 /* Food.swift in Sources */,
 				4D96FF4A291EE83D00E20D43 /* ContactNotifiable.swift in Sources */,
@@ -268,6 +273,7 @@
 				4D96FF36291D947000E20D43 /* SpriteComponent.swift in Sources */,
 				4D96FF26291D8B5400E20D43 /* GameScene.swift in Sources */,
 				4D96FF1C291D8B5400E20D43 /* GameViewController.swift in Sources */,
+				4D96FF4E291F162600E20D43 /* Ground.swift in Sources */,
 				4D96FF1A291D8B5400E20D43 /* AppDelegate.swift in Sources */,
 				4D96FF48291EDF9600E20D43 /* Food.swift in Sources */,
 				4D96FF4B291EE83D00E20D43 /* ContactNotifiable.swift in Sources */,
