@@ -31,7 +31,7 @@ extension GameScene {
     }
     
     override func mouseDragged(with event: NSEvent) {
-
+        player.transform.translate(CGVector(dx: event.deltaX, dy: 0.0))
     }
     
     override func mouseUp(with event: NSEvent) {
