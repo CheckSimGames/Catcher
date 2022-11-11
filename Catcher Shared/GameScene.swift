@@ -13,10 +13,12 @@ class GameScene: SKScene {
     var player = Player()
     var foodList: Set<Food> = []
     var spawnTimer = Timer()
+    var scoreLabel = SKLabelNode()
     
     func setUpScene() {
         placePlayer()
         startTimer()
+        setupLabel()
         // You need to set the contact delegate for the collision detection functions in the extension to be called. Those functions are later in the file.
         physicsWorld.contactDelegate = self
     }
@@ -53,6 +55,15 @@ class GameScene: SKScene {
         
         foodList.insert(newFood)
         addChild(newFood.sprite.node)
+    }
+    
+    func setupLabel() {
+        scoreLabel.position.x = 32
+        scoreLabel.position.y = size.height - 32
+        scoreLabel.text = String(player.score)
+        scoreLabel.color = .white
+        scoreLabel.fontName = "Helvetica Bold"
+        addChild(scoreLabel)
     }
     
     override func didMove(to view: SKView) {
