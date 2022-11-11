@@ -34,6 +34,8 @@
 		4D96FF45291EDEA200E20D43 /* PhysicsBodyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */; };
 		4D96FF47291EDF9600E20D43 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF46291EDF9600E20D43 /* Food.swift */; };
 		4D96FF48291EDF9600E20D43 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF46291EDF9600E20D43 /* Food.swift */; };
+		4D96FF4A291EE83D00E20D43 /* ContactNotifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */; };
+		4D96FF4B291EE83D00E20D43 /* ContactNotifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,7 @@
 		4D96FF40291EDE3E00E20D43 /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
 		4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBodyType.swift; sourceTree = "<group>"; };
 		4D96FF46291EDF9600E20D43 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNotifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 			children = (
 				4D96FEFE291D8B5200E20D43 /* Actions.sks */,
 				4D96FF01291D8B5400E20D43 /* Assets.xcassets */,
+				4D96FF49291EE83D00E20D43 /* ContactNotifiable.swift */,
 				4D96FF46291EDF9600E20D43 /* Food.swift */,
 				4D96FF00291D8B5200E20D43 /* GameScene.swift */,
 				4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */,
@@ -248,6 +252,7 @@
 				4D96FF0C291D8B5400E20D43 /* GameViewController.swift in Sources */,
 				4D96FF0A291D8B5400E20D43 /* AppDelegate.swift in Sources */,
 				4D96FF47291EDF9600E20D43 /* Food.swift in Sources */,
+				4D96FF4A291EE83D00E20D43 /* ContactNotifiable.swift in Sources */,
 				4D96FF3B291D98C900E20D43 /* EventHandlingiOS.swift in Sources */,
 				4D96FF41291EDE3E00E20D43 /* PhysicsComponent.swift in Sources */,
 			);
@@ -265,6 +270,7 @@
 				4D96FF1C291D8B5400E20D43 /* GameViewController.swift in Sources */,
 				4D96FF1A291D8B5400E20D43 /* AppDelegate.swift in Sources */,
 				4D96FF48291EDF9600E20D43 /* Food.swift in Sources */,
+				4D96FF4B291EE83D00E20D43 /* ContactNotifiable.swift in Sources */,
 				4D96FF39291D97F500E20D43 /* EventHandlingMac.swift in Sources */,
 				4D96FF42291EDE3E00E20D43 /* PhysicsComponent.swift in Sources */,
 			);
