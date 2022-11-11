@@ -12,6 +12,7 @@ class GameScene: SKScene {
     
     var player = Player()
     var foodList: Set<Food> = []
+    var ground = Ground(width: 256)
     var dropSpeed = -4.0
     var spawnTimer = Timer()
     var dropSpeedTimer = Timer()
@@ -21,6 +22,7 @@ class GameScene: SKScene {
         placePlayer()
         startTimers()
         setupLabel()
+        setupGround()
         // You need to set the contact delegate for the collision detection functions in the extension to be called. Those functions are later in the file.
         physicsWorld.contactDelegate = self
     }
@@ -71,6 +73,11 @@ class GameScene: SKScene {
         scoreLabel.fontName = "Helvetica Bold"
         scoreLabel.horizontalAlignmentMode = .left
         addChild(scoreLabel)
+    }
+        
+    func setupGround() {
+        ground.sprite.node.size.width = self.size.width
+        addChild(ground.sprite.node)
     }
     
     override func didMove(to view: SKView) {
