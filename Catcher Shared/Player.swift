@@ -21,6 +21,10 @@ class Player: GKEntity {
         
         addComponent(transform)
         transform.set(node: sprite.node)
+        
+        let physicsComponent = PhysicsComponent(physicsBody: SKPhysicsBody(rectangleOf: CGSize(width: sprite.node.size.width, height: sprite.node.size.height)))
+        physicsComponent.physicsBody.affectedByGravity = false
+        addComponent(physicsComponent)
     }
     
     required init?(coder: NSCoder) {
