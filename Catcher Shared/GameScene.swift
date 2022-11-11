@@ -12,12 +12,14 @@ class GameScene: SKScene {
     
     var player = Player()
     var foodList: Set<Food> = []
+    var dropSpeed = -5.0
     var spawnTimer = Timer()
+    var dropSpeedTimer = Timer()
     var scoreLabel = SKLabelNode()
     
     func setUpScene() {
         placePlayer()
-        startTimer()
+        startTimers()
         setupLabel()
         // You need to set the contact delegate for the collision detection functions in the extension to be called. Those functions are later in the file.
         physicsWorld.contactDelegate = self
@@ -33,9 +35,13 @@ class GameScene: SKScene {
         addChild(player.sprite.node)
     }
     
-    func startTimer() {
+    func startTimers() {
         spawnTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {_ in
             self.spawnFood()
+        })
+        
+        spawnTimer = Timer.scheduledTimer(withTimeInterval: 15.0, repeats: true, block: {_ in
+            self.increaseDropSpeed()
         })
     }
     
@@ -79,11 +85,14 @@ class GameScene: SKScene {
     }
     
     func dropFood() {
-        let dropSpeed = -5.0
-        
         for food in foodList {
             food.transform.translate(CGVector(dx: 0, dy: dropSpeed))
         }
+    }
+    
+    func increaseDropSpeed() {
+        // Dropping is a negative number so to increase the speed, subtract.
+        dropSpeed -= 1.0
     }
 }
 
