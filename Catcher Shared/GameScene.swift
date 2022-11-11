@@ -12,10 +12,11 @@ class GameScene: SKScene {
     
     var player = Player()
     var foodList: Set<Food> = []
+    var spawnTimer = Timer()
     
     func setUpScene() {
         placePlayer()
-        spawnFood()
+        startTimer()
         // You need to set the contact delegate for the collision detection functions in the extension to be called. Those functions are later in the file.
         physicsWorld.contactDelegate = self
     }
@@ -28,6 +29,12 @@ class GameScene: SKScene {
         player.sprite.node.position = CGPoint(x: startX, y: startY)
         player.sprite.node.entity = player
         addChild(player.sprite.node)
+    }
+    
+    func startTimer() {
+        spawnTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: {_ in
+            self.spawnFood()
+        })
     }
     
     func spawnFood() {
