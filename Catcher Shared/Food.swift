@@ -30,3 +30,16 @@ class Food: GKEntity {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+// Collision handling code
+extension Food: ContactNotifiable {
+    func contactDidBegin(with entity: GKEntity) {
+        if entity is Player {
+            sprite.node.removeFromParent()
+        }
+    }
+    
+    func contactDidEnd(with entity: GKEntity) {
+        
+    }
+}
