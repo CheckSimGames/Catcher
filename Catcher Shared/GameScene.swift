@@ -63,3 +63,32 @@ class GameScene: SKScene {
         }
     }
 }
+
+/// Collision code
+extension GameScene: SKPhysicsContactDelegate {
+    func didBegin(_ contact: SKPhysicsContact) {
+        let entityA = contact.bodyA.node?.entity
+        let entityB = contact.bodyB.node?.entity
+
+        if let notifiableEntity = entityA as? ContactNotifiable, let otherEntity = entityB {
+            notifiableEntity.contactDidBegin(with: otherEntity)
+        }
+
+        if let notifiableEntity = entityB as? ContactNotifiable, let otherEntity = entityA {
+            notifiableEntity.contactDidBegin(with: otherEntity)
+        }
+    }
+
+    func didEnd(_ contact: SKPhysicsContact) {
+        let entityA = contact.bodyA.node?.entity
+        let entityB = contact.bodyB.node?.entity
+
+        if let notifiableEntity = entityA as? ContactNotifiable, let otherEntity = entityB {
+            notifiableEntity.contactDidEnd(with: otherEntity)
+        }
+
+        if let notifiableEntity = entityB as? ContactNotifiable, let otherEntity = entityA {
+            notifiableEntity.contactDidEnd(with: otherEntity)
+        }
+    }
+}
