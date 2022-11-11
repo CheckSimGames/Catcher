@@ -30,6 +30,8 @@
 		4D96FF3F291D9A7B00E20D43 /* TransformCompnent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF3D291D9A7B00E20D43 /* TransformCompnent.swift */; };
 		4D96FF41291EDE3E00E20D43 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF40291EDE3E00E20D43 /* PhysicsComponent.swift */; };
 		4D96FF42291EDE3E00E20D43 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF40291EDE3E00E20D43 /* PhysicsComponent.swift */; };
+		4D96FF44291EDEA200E20D43 /* PhysicsBodyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */; };
+		4D96FF45291EDEA200E20D43 /* PhysicsBodyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,7 @@
 		4D96FF3A291D98C900E20D43 /* EventHandlingiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHandlingiOS.swift; sourceTree = "<group>"; };
 		4D96FF3D291D9A7B00E20D43 /* TransformCompnent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformCompnent.swift; sourceTree = "<group>"; };
 		4D96FF40291EDE3E00E20D43 /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
+		4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBodyType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 				4D96FEFE291D8B5200E20D43 /* Actions.sks */,
 				4D96FF01291D8B5400E20D43 /* Assets.xcassets */,
 				4D96FF00291D8B5200E20D43 /* GameScene.swift */,
+				4D96FF43291EDEA200E20D43 /* PhysicsBodyType.swift */,
 				4D96FF40291EDE3E00E20D43 /* PhysicsComponent.swift */,
 				4D96FF31291D941F00E20D43 /* Player.swift */,
 				4D96FF34291D947000E20D43 /* SpriteComponent.swift */,
@@ -232,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D96FF44291EDEA200E20D43 /* PhysicsBodyType.swift in Sources */,
 				4D96FF32291D941F00E20D43 /* Player.swift in Sources */,
 				4D96FF3E291D9A7B00E20D43 /* TransformCompnent.swift in Sources */,
 				4D96FF35291D947000E20D43 /* SpriteComponent.swift in Sources */,
@@ -247,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D96FF45291EDEA200E20D43 /* PhysicsBodyType.swift in Sources */,
 				4D96FF33291D941F00E20D43 /* Player.swift in Sources */,
 				4D96FF3F291D9A7B00E20D43 /* TransformCompnent.swift in Sources */,
 				4D96FF36291D947000E20D43 /* SpriteComponent.swift in Sources */,
