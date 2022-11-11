@@ -32,10 +32,14 @@ class GameScene: SKScene {
         // Spawn the food at the top of the scene at a random horizontal spot.
         let randomGenerator = GKRandomDistribution(lowestValue: 0, highestValue: Int(size.width))
         let x = randomGenerator.nextInt()
+        let y = Int(size.height)
         
-        let newFood = Food(location: CGPoint(x: x, y: Int(size.height)))
+        let newFood = Food(location: CGPoint(x: x, y: y))
+        newFood.sprite.node.position = CGPoint(x: x, y: y)
+        
         // Set the food's entity so we don't have a nil entity when doing collision detection.
         newFood.sprite.node.entity = newFood
+        
         foodList.insert(newFood)
         addChild(newFood.sprite.node)
     }
@@ -46,5 +50,13 @@ class GameScene: SKScene {
 
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+    }
+    
+    func dropFood() {
+        let dropSpeed = -10.0
+        
+        for food in foodList {
+            food.transform.translate(CGVector(dx: 0, dy: dropSpeed))
+        }
     }
 }
