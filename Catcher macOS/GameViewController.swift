@@ -14,7 +14,8 @@ class GameViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scene = GameScene(size: view.bounds.size)        
+        let scene = GameScene(size: view.bounds.size)
+        scene.backgroundColor = .cyan
         scene.scaleMode = .resizeFill
         
         // Present the scene

@@ -15,7 +15,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         let scene = GameScene(size: view.bounds.size)
-
+        scene.backgroundColor = .cyan
         // I may need to set the scale mode if things don't look right. The .aspectFill scale mode is in the Apple code for a new project.
 
         // Present the scene
