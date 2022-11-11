@@ -61,8 +61,9 @@ class GameScene: SKScene {
         scoreLabel.position.x = 32
         scoreLabel.position.y = size.height - 32
         scoreLabel.text = String(player.score)
-        scoreLabel.color = .white
+        scoreLabel.fontColor = .white
         scoreLabel.fontName = "Helvetica Bold"
+        scoreLabel.horizontalAlignmentMode = .left
         addChild(scoreLabel)
     }
     
