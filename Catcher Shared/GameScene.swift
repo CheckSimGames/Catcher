@@ -54,7 +54,7 @@ class GameScene: SKScene {
     }
     
     func dropFood() {
-        let dropSpeed = -10.0
+        let dropSpeed = -5.0
         
         for food in foodList {
             food.transform.translate(CGVector(dx: 0, dy: dropSpeed))
