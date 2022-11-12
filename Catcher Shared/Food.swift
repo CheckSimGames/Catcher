@@ -35,6 +35,7 @@ class Food: GKEntity {
 extension Food: ContactNotifiable {
     func contactDidBegin(with entity: GKEntity) {
         if entity is Player {
+            // How do I remove the item from the list in the scene?
             sprite.node.removeFromParent()
         }
         
