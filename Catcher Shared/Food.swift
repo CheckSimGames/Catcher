@@ -37,6 +37,11 @@ extension Food: ContactNotifiable {
         if entity is Player {
             sprite.node.removeFromParent()
         }
+        
+        if entity is Ground {
+            // TODO: Create a particle effect of the food exploding when hitting the ground. Also end the game.
+            sprite.node.removeFromParent()
+        }
     }
     
     func contactDidEnd(with entity: GKEntity) {
