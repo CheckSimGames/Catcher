@@ -77,8 +77,6 @@ class GameScene: SKScene {
         
     func setupGround() {
         ground = Ground(width: Int(self.size.width))
-        // Set the anchor point to the left corner to make the ground sprite fill the width of the screen.
-        ground.sprite.node.anchorPoint = CGPoint(x: 0, y: 0)
         ground.sprite.node.entity = ground
         addChild(ground.sprite.node)
     }

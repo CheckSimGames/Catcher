@@ -15,6 +15,8 @@ class Ground: GKEntity {
         super.init()
         sprite.node = SKSpriteNode(color: .gray, size: CGSize(width: width, height: 32))
         sprite.node.position = CGPoint(x: 0, y: 0)
+        // Set the anchor point to the left corner to make the ground sprite fill the width of the screen.
+        sprite.node.anchorPoint = CGPoint(x: 0, y: 0)
         addComponent(sprite)
         
         let physicsComponent = PhysicsComponent(physicsBody: SKPhysicsBody(rectangleOf: CGSize(width: sprite.node.size.width, height: sprite.node.size.height)))
