@@ -19,7 +19,9 @@ class Ground: GKEntity {
         sprite.node.anchorPoint = CGPoint(x: 0, y: 0)
         addComponent(sprite)
         
-        let physicsComponent = PhysicsComponent(physicsBody: SKPhysicsBody(rectangleOf: CGSize(width: sprite.node.size.width, height: sprite.node.size.height)))
+        // Have to set the center of the physics body to make the collision work on the whole bottom of the screen. Without it no collisions are detected on the right side of the screen.
+        let body = SKPhysicsBody(rectangleOf: CGSize(width: sprite.node.size.width, height: sprite.node.size.height), center: CGPoint(x: sprite.node.size.width / 2, y: sprite.node.size.height / 2))
+        let physicsComponent = PhysicsComponent(physicsBody: body)
         physicsComponent.physicsBody.affectedByGravity = false
         addComponent(physicsComponent)
     }
