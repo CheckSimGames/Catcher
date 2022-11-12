@@ -26,3 +26,14 @@ class Ground: GKEntity {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+// Collision handling code
+extension Ground: ContactNotifiable {
+    func contactDidBegin(with entity: GKEntity) {
+
+    }
+    
+    func contactDidEnd(with entity: GKEntity) {
+        
+    }
+}
