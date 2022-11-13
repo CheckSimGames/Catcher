@@ -98,8 +98,6 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
         dropFood()
-        // TODO: Find a way to update the score label when the player grabs some food.
-        scoreLabel.text = String(player.score)
     }
     
     func dropFood() {
@@ -129,6 +127,7 @@ class GameScene: SKScene {
     @objc func removeFood(_ notification: NSNotification) {
         if let food = notification.object as? Food {
             foodList.remove(food)
+            scoreLabel.text = String(player.score)
         }
     }
 }
