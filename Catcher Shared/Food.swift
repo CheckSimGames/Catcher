@@ -37,6 +37,7 @@ extension Food: ContactNotifiable {
         if entity is Player {
             // How do I remove the item from the list in the scene?
             sprite.node.removeFromParent()
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FoodCaught"), object: self)
         }
         
         if entity is Ground {
