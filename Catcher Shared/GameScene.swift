@@ -87,6 +87,8 @@ class GameScene: SKScene {
         // In a real game you would show a Game Over screen with a button to play again.
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(restartGame(_:)), name: NSNotification.Name(rawValue: "FoodHitGround"), object: nil)
+        
+        center.addObserver(self, selector: #selector(removeFood(_:)), name: NSNotification.Name(rawValue: "FoodCaught"), object: nil)
     }
     
     override func didMove(to view: SKView) {
@@ -122,6 +124,12 @@ class GameScene: SKScene {
         
         foodList.removeAll()
         dropSpeed = -4.0
+    }
+    
+    @objc func removeFood(_ notification: NSNotification) {
+        if let food = notification.object as? Food {
+            foodList.remove(food)
+        }
     }
 }
 
