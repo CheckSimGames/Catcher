@@ -77,7 +77,8 @@ class GameScene: SKScene {
     }
         
     func setupGround() {
-        ground = Ground(width: Int(self.size.width))
+        // I'm doubling the width to work around a bug in the Mac version where the ground doesn't fill the whole width of the view when using self.size.width.
+        ground = Ground(width: Int(self.size.width * 2))
         ground.sprite.node.entity = ground
         addChild(ground.sprite.node)
     }
