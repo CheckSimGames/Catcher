@@ -40,8 +40,9 @@ extension Food: ContactNotifiable {
         }
         
         if entity is Ground {
-            // TODO: Create a particle effect of the food exploding when hitting the ground. Also end the game.
+            // TODO: Create a particle effect of the food exploding when hitting the ground.
             sprite.node.removeFromParent()
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FoodHitGround"), object: nil)
         }
     }
     
