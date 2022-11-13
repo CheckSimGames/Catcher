@@ -23,6 +23,7 @@ class GameScene: SKScene {
         startTimers()
         setupLabel()
         setupGround()
+        registerForNotifications()
         // You need to set the contact delegate for the collision detection functions in the extension to be called. Those functions are later in the file.
         physicsWorld.contactDelegate = self
     }
@@ -81,6 +82,13 @@ class GameScene: SKScene {
         addChild(ground.sprite.node)
     }
     
+    func registerForNotifications() {
+        // When the food hits the ground, a notification of the event will be saved. Register for that notification here to restart the game.
+        // In a real game you would show a Game Over screen with a button to play again.
+        let center = NotificationCenter.default
+        center.addObserver(self, selector: #selector(restartGame(_:)), name: NSNotification.Name(rawValue: "FoodHitGround"), object: nil)
+    }
+    
     override func didMove(to view: SKView) {
         self.setUpScene()
     }
@@ -101,6 +109,19 @@ class GameScene: SKScene {
     func increaseDropSpeed() {
         // Dropping is a negative number so to increase the speed, subtract.
         dropSpeed -= 0.5
+    }
+    
+    // The @objc is needed because the function is called when a notification fires.
+    @objc func restartGame(_ notification: NSNotification) {
+        player.score = 0
+        scoreLabel.text = String(player.score)
+        
+        for food in foodList {
+            food.sprite.node.removeFromParent()
+        }
+        
+        foodList.removeAll()
+        dropSpeed = -4.0
     }
 }
 
