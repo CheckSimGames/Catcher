@@ -2,6 +2,8 @@
 
 A simple game showing how to use the GameplayKit entity component system in a SpriteKit game.
 
+The [CatcherSwiftPlaygrounds repo](https://github.com/CheckSimGames/CatcherSwiftPlaygrounds) contains a Swift Playgrounds version of the game.
+
 ## System Requirements
 
 * iOS 11+
